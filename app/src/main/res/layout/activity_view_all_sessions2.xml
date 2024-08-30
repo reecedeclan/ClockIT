@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PeriodLogged">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="363dp"
+        android:layout_height="554dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Category"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/LinearActivities1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="14dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="back2"
+        android:src="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/actName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="5dp"
+        android:text="txtActivityName"
+        android:textAlignment="center"
+        android:textColor="#FEFEFE"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Category"
+        android:layout_width="213dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="97dp"
+        android:text="txtCategory"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
+        app:layout_constraintTop_toBottomOf="@+id/actName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

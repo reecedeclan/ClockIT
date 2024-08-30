@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:backgroundTint="#000000"
+    android:textAlignment="center"
+    tools:context=".LogHours">
+
+    <TextView
+        android:id="@+id/txtActivity1"
+        android:layout_width="317dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="77dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogHours"
+        android:layout_width="134dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginEnd="149dp"
+        android:background="@drawable/round_buttons"
+        android:backgroundTint="#1B232E"
+        android:text="Log Hours"
+        android:textColor="#FEFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:text="Daily goals"
+        android:textColor="#E5E5E5"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogHours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtActivity1" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="354dp"
+        android:text="Are there daily goals that you would like to set?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategory1" />
+
+    <TextView
+        android:id="@+id/txtCategory1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="73dp"
+        android:textColor="#8076B0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtActivity1" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="49dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="17dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/back_button"
+        app:layout_constraintBottom_toTopOf="@+id/txtActivity1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="DeleteOnClick"
+        app:layout_constraintBottom_toTopOf="@+id/txtCategory1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/baseline_auto_delete_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

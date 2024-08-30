@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "156257947739",
+    "project_id": "clockit-13d02",
+    "storage_bucket": "clockit-13d02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156257947739:android:b6ddcc1f59678e33656f7e",
+        "android_client_info": {
+          "package_name": "com.varsitycollege.st10043352.opsc_clockit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHT7lttACUPmMNd19ngk8XW1MozeQMmjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

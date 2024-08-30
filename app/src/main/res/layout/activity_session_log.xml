@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:backgroundTint="#000000"
+    android:textAlignment="center"
+    tools:context=".LogHours"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="8dp">
+
+
+    <Button
+        android:id="@+id/btnAddPhoto"
+        android:layout_width="161dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#1B232E"
+        android:hapticFeedbackEnabled="false"
+        android:shadowColor="#1B232E"
+        android:text="Upload image"
+        android:textColorHighlight="#1B232E"
+        android:textColorHint="#1B232E"
+        android:textColorLink="#1B232E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606"
+        app:strokeColor="#1B232E" />
+
+    <Button
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="161dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#1B232E"
+        android:text="Open Camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="165dp"
+        android:layout_height="153dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <TimePicker
+        android:id="@+id/spnrTime"
+        android:layout_width="165dp"
+        android:layout_height="154dp"
+        android:theme="@style/MyDatePicker"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="142dp"
+        android:layout_height="25dp"
+        android:text="Session duration:"
+        android:textAlignment="center"
+        android:textColor="#FEFEFE"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <TextView
+        android:id="@+id/textView98"
+        android:layout_width="142dp"
+        android:layout_height="25dp"
+        android:text="Activity image:"
+        android:textAlignment="center"
+        android:textColor="#FEFEFE"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <TextView
+        android:id="@+id/txtActivity1"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        android:text="Activity Name"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/txtCategory1"
+        android:layout_width="197dp"
+        android:layout_height="55dp"
+
+        android:text="Category"
+        android:textColor="#8076B0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="49dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="back1"
+        android:src="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="172dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#1B232E"
+        android:hapticFeedbackEnabled="false"
+        android:shadowColor="#1B232E"
+        android:text="Save session"
+        android:textColorHighlight="#1B232E"
+        android:textColorHint="#1B232E"
+        android:textColorLink="#1B232E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934"
+        app:strokeColor="#1B232E" />
+
+    <DatePicker
+        android:id="@+id/DatePicker"
+        android:layout_width="237dp"
+        android:layout_height="88dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:hapticFeedbackEnabled="true"
+        android:theme="@style/MyDatePicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="167dp"
+        android:layout_height="27dp"
+        android:text="Enter date of session"
+        android:textAlignment="center"
+        android:textColor="#FEFEFE"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

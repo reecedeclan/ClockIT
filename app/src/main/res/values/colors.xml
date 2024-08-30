@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorOption1">#FF0000</color> <!-- Red -->
+    <color name="colorOption2">#0000FF</color> <!-- Blue -->
+    <color name="colorOption3">#00FF00</color> <!-- Green -->
+    <color name="colorOption4">#FFFF00</color> <!-- Yellow -->
+    <color name="colorOption5">#FF00FF</color> <!-- Magenta -->
+
+
+    <color name="red">#FF0000</color> <!-- Red -->
+    <color name="blue">#0000FF</color> <!-- Blue -->
+    <color name="green">#00FF00</color> <!-- Green -->
+    <color name="yellow">#FFFF00</color> <!-- Yellow -->
+    <color name="magenta">#FF00FF</color> <!-- Magenta -->
+
+
+    <color name="gold">#FFD700</color> <!-- Gold -->
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

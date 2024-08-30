@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".home_page">
+
+    <ImageView
+        android:id="@+id/btnInsights"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:srcCompat="@drawable/nav_calendar_selected" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="navGoals"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnStatistics"
+        app:srcCompat="@drawable/nav_goals_unselected"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/btnStatistics"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="navStats"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInsights"
+        app:srcCompat="@drawable/nav_stats_unselected"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="navFun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:srcCompat="@drawable/nav_funstuff_unselected"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/btnHome"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="navHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/nav_home_unselected"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/ClockIT_background"
+        android:layout_width="457dp"
+        android:layout_height="225dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_snail" />
+
+
+    <Button
+        android:id="@+id/btnAddDate"
+        android:layout_width="93dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#1B232E"
+        android:text="Search"
+        android:textColor="#FEFEFE"
+        android:textColorHighlight="#1B232E"
+        android:textColorHint="#1B232E"
+        android:textColorLink="#1B232E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ClockIT_background"
+        app:layout_constraintVertical_bias="0.888"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="10dp"
+        android:text="Insights"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ClockIT_background" />
+
+    <TextView
+        android:id="@+id/StartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ECE9E9"
+        android:text="Start Date:"
+        android:textColor="@color/white"
+        android:textColorLink="#16F6F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/EndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ECE9E9"
+        android:text="End Date:"
+        android:textColor="@color/white"
+        android:textColorLink="#16F6F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ClockIT_background"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#b6c0d0"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            style="@style/MyDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dateTextAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:dayOfWeekTextAppearance="@style/MyCalendarDayOfWeekText"
+            android:focusedMonthDateColor="#FFFFFF"
+            android:selectedWeekBackgroundColor="#FFFFFF"
+            android:unfocusedMonthDateColor="#FFFFFF"
+            android:visibility="visible"
+            android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:weekNumberColor="#FFFFFF"
+            android:weekSeparatorLineColor="#FFFFFF"
+            tools:focusedMonthDateColor="#FFFFFF"
+            tools:selectedWeekBackgroundColor="#FFFFFF"
+            tools:unfocusedMonthDateColor="#FFFFFF"
+            tools:weekNumberColor="#FFFFFF"
+            tools:weekSeparatorLineColor="#FFFFFF" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
